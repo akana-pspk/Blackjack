@@ -18,3 +18,5 @@ elif dealer > player:
     print("Dealer Wins!")
 else:
     print("It's a Tie!")
+
+Version 2 is ready
