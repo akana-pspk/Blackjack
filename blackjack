@@ -1,0 +1,20 @@
+import random
+
+cards = [2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11]
+
+player = random.choice(cards) + random.choice(cards)
+dealer = random.choice(cards) + random.choice(cards)
+
+print("Player Score:", player)
+print("Dealer Score:", dealer)
+
+if player > 21:
+    print("Player Bust! Dealer Wins")
+elif dealer > 21:
+    print("Dealer Bust! Player Wins")
+elif player > dealer:
+    print("Player Wins!")
+elif dealer > player:
+    print("Dealer Wins!")
+else:
+    print("It's a Tie!")
